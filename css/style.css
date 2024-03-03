@@ -34,10 +34,10 @@
 :root {
   --thm-font: 'Open Sans';
   --heading-font: 'Work Sans';
-  --thm-base-color: #20dfe3;
-  --thm-base-color-rgb: 32, 223, 227;
-  --thm-primary-color: #5538f4;
-  --thm-primary-color-rgb: 85, 56, 244;
+  --thm-base-color: #3283b0;
+  --thm-base-color-rgb: 50, 131, 176;
+  --thm-primary-color: #3283b0;
+  --thm-primary-color-rgb: 50, 131, 176;
   --thm-black-color: #2d2c2c;
   --thm-black-color-rgb: 45, 44, 44;
   --thm-gray-color: #f0f1f5;
@@ -2870,8 +2870,8 @@ textarea.leave-comment__input {
 }
 
 .service-one__single:hover {
-  -webkit-box-shadow: 0px 50px 120px 0px rgba(26, 46, 85, 0.2);
-          box-shadow: 0px 50px 120px 0px rgba(26, 46, 85, 0.2);
+  -webkit-box-shadow: 0px 50px 120px 0px rgba(50, 131, 176, 0.2);
+          box-shadow: 0px 50px 120px 0px rgba(50, 131, 176, 0.2);
 }
 
 .service-one__single:hover .service-one__link {
