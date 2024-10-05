@@ -619,16 +619,16 @@ nice Select active
     type: 'iframe',
     iframe: {
         markup: '<div class="mfp-iframe-scaler">'+
-            '<div class="mfp-close"></div>'+
-            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-            '<div class="mfp-title">Some caption</div>'+
-            '</div>',
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen src="'+$(this).attr('video-link')+'"></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+                '</div>',
         patterns: {
-            youtube: {
-                index: 'youtube.com/', 
-                id: 'v=',
-                src: 'https://www.youtube.com/embed/ryzOXAO0Ss0'
-            }
+          youtube: {
+            index: '(link unavailable)',
+            id: 'v=',
+            src: ''
+          }
         }
     }
     // other options
