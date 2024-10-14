@@ -72,11 +72,11 @@ nice Select active
 				if(tpj("#rev_slider_41_1").revolution == undefined){
 				}else{
 					revapi41 = tpj("#rev_slider_41_1").show().revolution({
-						sliderType:"carousel",
+						sliderType:"standard",
 						jsFileLocation:"revolution/js/",
 						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
-						delay:500,
+						delay:2000,
 						navigation: {
 							keyboardNavigation:"off",
 							keyboard_direction: "horizontal",
@@ -758,7 +758,6 @@ $(window).load(function() {
 				});
 			}
 		});
-		
 		
 /******color change script end******/
 
