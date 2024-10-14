@@ -1420,7 +1420,7 @@ body.active #mobile-nav {
 	float:left;
 }
 .rev_slider_wrapper{
-	background:url('../images/header/main_slider_bg_img.jpg')50% 0 repeat-y;
+	/*background:url('../images/header/main_slider_bg_img.jpg')50% 0 repeat-y;*/
 	background-position:center 0;
 	background-size:cover;
 	width:100%;
@@ -10186,5 +10186,32 @@ padding-top:25px;
        margin-bottom: 40px;
    }
 }
+
+.prs_navigation_main_wrapper {
+    background-color: white;
+}
+
+.prs_navigation_main_wrapper .dl-menu > li > a,
+.prs_navigation_main_wrapper .prs_mobail_searchbar_wrapper i {
+    color: black;
+}
+
+.rev_slider_wrapper {
+	width: 100% !important;
+  }
+  
+  .tp-simpleresponsive img {
+	width: 100% !important;
+	height: 100% !important;
+  }
+  
+  .tp-previous-slide, .tp-next-slide {
+	display: none;
+  }
+
+
+/* Chatgpt gener
+*/  
+
 
 /*---------------- st LogIn End --------------*/
