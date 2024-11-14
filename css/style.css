@@ -299,11 +299,11 @@ ul.colors li:hover p {
 }
 .prs_navi_left_main_wrapper{
 	float:left;
-	width:55%;
+	width:100%;
 }
 .prs_navi_right_main_wrapper{
 	float:left;
-	width:45%;
+	width:100%;
 	padding-top: 25px;
 }
 .prs_logo_main_wrapper{
@@ -331,7 +331,7 @@ ul.colors li:hover p {
     -moz-border-radius: 10px;
     border-radius: 10px; 
 	margin-right:10px;}
-.dl-menuwrapper button:hover, .dl-menuwrapper button.dl-active, .dl-menuwrapper ul { background: #dd3333; }
+.dl-menuwrapper button:hover, .dl-menuwrapper button.dl-active, .dl-menuwrapper ul { background: #0e0303; }
 .dl-menuwrapper {
 	position: absolute;
 	top: 50%;
@@ -1442,7 +1442,7 @@ body.active #mobile-nav {
 	-webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-	background:rgba(255, 68, 68, 0.62);
+	background:#92288F;
 }
 .metis.tparrows:hover{
 	background:#92288F;
@@ -5633,23 +5633,6 @@ body.active #mobile-nav {
 	position:relative;
 	text-align:center;
 }
-.prs_contact_right_section_wrapper:after{
-	content:'';
-	width:80%;
-	height:20px;
-	background:#e74343;
-	position:absolute;
-	top:-20px;
-	left:0;
-	right:0;
-	margin:0px auto;
-	    -webkit-border-top-left-radius: 10px;
-    -moz-border-top-left-radius: 10px;
-    border-top-left-radius: 10px;
-	    -webkit-border-top-right-radius: 10px;
-    -moz-border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
 .prs_contact_right_section_wrapper ul{
 	display:inline-block;
 }
@@ -5689,23 +5672,7 @@ body.active #mobile-nav {
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-.prs_contact_info_smallbox:after{
-	content:'';
-	width:80%;
-	height:10px;
-	background:#e74343;
-	position:absolute;
-	top:-10px;
-	left:0;
-	right:0;
-	margin:0px auto;
-	-webkit-border-top-left-radius: 5px;
-    -moz-border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
+
 .prs_contact_info_smallbox i:before{
 	margin-left:0;
 }
@@ -10142,8 +10109,8 @@ padding-top:25px;
     padding-top: 70px;
     padding-bottom: 70px;
     background: #92288F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #92288F, #7A5199);
-    background: linear-gradient(to right, #92288F, #7A5199); 
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ffffff);
+    background: linear-gradient(to right, #ffffff, #ffffff); 
 }
 
 .count-title {
@@ -10153,7 +10120,7 @@ padding-top:25px;
    margin-bottom: 0;
      text-align: center;
      font-weight: bold;
-   color: #fff;
+   color: #000;
 }
 
 .stats-text {
@@ -10162,7 +10129,7 @@ padding-top:25px;
    margin-top: 15px;
    margin-bottom: 0;
    text-align: center;
-     color: #fff;
+     color: #000;
      text-transform: uppercase;
      font-weight: bold;
 }
@@ -10212,6 +10179,86 @@ padding-top:25px;
 
 /* Chatgpt gener
 */  
+div.horizontalgap {
+	float: left;
+	overflow: hidden;
+	height: 1px;
+	width: 0px;
+  }
 
+  .prs_navigation_main_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.prs_navi_left_main_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px; /* Space between logo and menu */
+}
+
+.prs_logo_main_wrapper {
+    /* Remove any margins that might affect alignment */
+    margin: 0;
+    /* Prevent logo from shrinking */
+    flex-shrink: 0;
+}
+
+.prs_menu_main_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-default {
+    margin: 0;
+}
+
+.dl-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Space between menu items */
+}
+
+/* For mobile menu */
+@media (max-width: 768px) {
+    .prs_navi_left_main_wrapper {
+        flex-direction: column;
+    }
+
+    .dl-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dl-menu li {
+        margin: 10px 0;
+    }
+    
+    /* Show hamburger menu */
+    .dl-trigger {
+        display: block;
+    }
+}
+
+/* Hide hamburger menu on desktop */
+.dl-trigger {
+    display: none;
+}
+
+/* Ensure menu items don't wrap unnecessarily */
+.dl-menu li {
+    white-space: nowrap;
+}
 /*---------------- st LogIn End --------------*/
